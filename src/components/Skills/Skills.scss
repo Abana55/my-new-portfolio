@@ -1,0 +1,64 @@
+.skills {
+    text-align: center;
+  
+    &__title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    &__icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      justify-items: center;
+  
+      .skill-icon {
+        font-size: 40px;
+  
+        &--html {
+          color: #e34f26;
+        }
+  
+        &--css {
+          color: #1572b6;
+        }
+  
+        &--js {
+          color: #f7df1e;
+        }
+  
+        &--node {
+          color: #339933;
+        }
+  
+        &--react {
+          color: #61dafb;
+        }
+  
+        &--express {
+          color: #000;
+        }
+  
+        &--mysql {
+          color: #4479a1;
+        }
+  
+        &--heroku {
+          color: #430098;
+        }
+  
+        &--git {
+            color: #f34f29; // Git color
+          }
+      
+          &--github {
+            color: #181717; // GitHub color
+          }
+      
+          &--docker {
+            color: #2496ed; // Docker color
+          }
+        }
+      }
+}
