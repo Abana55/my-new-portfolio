@@ -1,14 +1,18 @@
 import React from 'react';
 import './ContactMe.scss';
 
-function ContactMe() {
+function Contact() {
   return (
-    <div className="contact-me">
-      <h2>Contact Me</h2>
-      <p>Email: your.email@example.com</p>
-      {/* Add more contact details or a contact form here */}
-    </div>
+    <section className="contact">
+      <h2 className="contact__title">Contact Me</h2>
+      <form className="contact__form">
+        <input type="text" className="contact__input" placeholder="Your Name" />
+        <input type="email" className="contact__input" placeholder="Your Email" />
+        <textarea className="contact__textarea" placeholder="Your Message"></textarea>
+        <button type="submit" className="contact__button">Send Message</button>
+      </form>
+    </section>
   );
 }
 
-export default ContactMe;
+export default Contact;

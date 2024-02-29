@@ -1,0 +1,46 @@
+.card {
+    border: 2px solid #eaeaea; /* Soft gray border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+  
+    &:nth-child(odd) {
+      background-color: #f7f7f7; /* Light gray */
+    }
+  
+    &:nth-child(even) {
+      background-color: #fff9e6; /* Light cream */
+    }
+  
+    .card-header {
+      font-weight: bold;
+      color: #333333; /* Dark gray font color */
+      margin-bottom: 15px;
+    }
+  
+    .card-title {
+      font-size: 18px;
+      color: #333333;
+    }
+  
+    .card-text {
+      color: #333333;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  
+    .btn {
+      background-color: #ffffff; /* White background */
+      color: #333333; /* Dark gray font color */
+      border: 1px solid #eaeaea; /* Soft gray border */
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #f0f0f0; /* Light gray on hover */
+      }
+    }
+  }
