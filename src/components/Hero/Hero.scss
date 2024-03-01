@@ -1,0 +1,52 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/luis-santiago-m2evRXDzXM4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  .hero__content {
+    text-align: center;
+    color: whitesmoke; 
+  }
+  
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero__buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hero__button {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border 0.3s ease;
+  
+    &:hover {
+      background-color: #ffffff; 
+      color: #000000; 
+      border: 1px solid transparent; 
+    }
+  }

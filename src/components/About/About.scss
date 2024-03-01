@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__section {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10vw;
+  
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+  
+      &-title {
+        flex-basis: 40%;
+        font-size: calc(2rem + 1vw);
+        color: #333;
+      }
+  
+      &-content {
+        flex-basis: 50%;
+        font-size: calc(1rem + 0.5vw);
+        color: #666;
+      }
+    }
+  }
