@@ -1,6 +1,6 @@
-import { Link, Element } from 'react-scroll';
+import React from "react";
+import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-import { Parallax } from "react-parallax";
 import "./About.scss";
 
 const sectionVariants = {
@@ -12,8 +12,17 @@ function About() {
   return (
     <div className="about">
       <Element name="aboutMe" className="about__section">
-        <div className="about__section-title">About Me</div>
-        <div className="about__section-content">
+        <motion.div
+          className="about__section-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={sectionVariants}
+        >
+          <div className="about__section-title">About Me</div>
+          <div className="about__section-content">
+        
             As an aspiring Software Engineer, I am driven by a passion for
             leveraging technology to solve complex problems and create impactful
             solutions. My background in programming, combined with a keen
@@ -27,10 +36,19 @@ function About() {
             technology, I am eager to contribute my expertise and grow as a
             professional in the dynamic field of software engineering.
             </div>
+        </motion.div>
       </Element>
       <Element name="education" className="about__section">
-        <div className="about__section-title">Education</div>
-        <div className="about__section-content">
+        <motion.div
+          className="about__section-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={sectionVariants}
+        >
+          <div className="about__section-title">Education</div>
+          <div className="about__section-content">
           <h4>BrainStation</h4>
           <p>Diploma, Software Engineering</p>
           <p>SEP-DEC 2023, MIAMI, FL</p>
@@ -40,10 +58,19 @@ function About() {
           <p>Student for Bachelor’s in Economics</p>
           <p>JAN 2017 - JUN 2020, MIAMI, FL</p>
           </div>
+        </motion.div>
       </Element>
       <Element name="experience" className="about__section">
-        <div className="about__section-title">Experience</div>
-        <div className="about__section-content">
+        <motion.div
+          className="about__section-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={sectionVariants}
+        >
+          <div className="about__section-title">Experience</div>
+          <div className="about__section-content">
         <div className="experience__item">
           <h4>Insurance Producer | Allstate</h4>
           <p>JULY 2022 - JULY 2023, Pembroke Pines, FL</p>
@@ -92,8 +119,10 @@ function About() {
             </li>
           </ul>
           </div>
+          </div>
+        </motion.div>
       </Element>
-      {/* Add more sections as needed */}
+      
     </div>
   );
 }
