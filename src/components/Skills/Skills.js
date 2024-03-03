@@ -36,7 +36,15 @@ function Skills() {
         <SiGithub className="skill-icon skill-icon--github" title="GitHub" alt="GitHub logo" />
         <FaDocker className="skill-icon skill-icon--docker" title="Docker" alt="Docker logo" />
       </div>
+      {/* <section>
+
+        <p>Ever since i was young ive had an affinity for building
+         things although i didnt get into software engineering
+          later in life i have found a deep desire in it as it goes
+           with my motto of never stop learning.</p>
+      </section> */}
     </motion.div>
+    
   );
 }
 
