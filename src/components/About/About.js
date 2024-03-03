@@ -5,8 +5,8 @@ import "./About.scss";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 
 const sectionVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0 },
+  hidden: { opacity: 110, x: -100 },
+  visible: { opacity: .9, x: 0 },
 };
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
           variants={sectionVariants}
         >
           <div className="about__box">
@@ -56,7 +56,7 @@ function About() {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://medium.com/@yourusername"
+                  href="https://medium.com/@anbana994"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="about__social-link medium"
