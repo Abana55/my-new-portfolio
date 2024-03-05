@@ -1,10 +1,16 @@
 .card {
-    border: 2px solid #eaeaea; /* Soft gray border */
+    border: 2px solid #eaeaea; 
     border-radius: 5px;
     padding: 15px;
     margin: 10px;
     width: 200px;
     display: inline-block;
+    position: relative;
+    background-size: cover;
+  background-position: center;
+  color: #fff; 
+  position: relative;
+  
   
     &:nth-child(odd) {
       background-color: #f7f7f7; /* Light gray */
@@ -43,4 +49,13 @@
         background-color: #f0f0f0; /* Light gray on hover */
       }
     }
+  }
+  .card-content {
+    background-color: rgba(0, 0, 0, 0.5); // Add a semi-transparent overlay to improve text visibility
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
   }
