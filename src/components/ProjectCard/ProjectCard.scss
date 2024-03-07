@@ -1,14 +1,12 @@
 .card {
-    border: 2px solid #eaeaea; 
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    width: 200px;
-    display: inline-block;
-    position: relative;
-    background-size: cover;
+  border: 2px solid #eaeaea;
+  border-radius: 97px;
+  padding: 159px;
+  display: inline-block;
+  position: relative;
+  background-size: cover;
   background-position: center;
-  color: #fff; 
+  color: #FFE;
   position: relative;
   
   
@@ -51,7 +49,7 @@
     }
   }
   .card-content {
-    background-color: rgba(0, 0, 0, 0.5); // Add a semi-transparent overlay to improve text visibility
+    background-color: rgba(0, 0, 0, .1); 
     position: absolute;
     top: 0;
     bottom: 0;

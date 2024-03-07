@@ -30,7 +30,7 @@ function Projects() {
     },
     {
       title: 'Project 5',
-      description: 'Description of Project 5',
+      description: 'Description of Project 5', 
       link: '#',
       imageUrl: 'https://example.com/image5.jpg'
     },

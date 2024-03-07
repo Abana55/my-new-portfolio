@@ -2,18 +2,18 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/luis-santiago-m2evRXDzXM4-unsplash.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
   }
   
   .hero__content {
     text-align: center;
-    color: whitesmoke; 
+    color: black; 
   }
   
   .hero__title {
