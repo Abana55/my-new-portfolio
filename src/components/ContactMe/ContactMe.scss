@@ -1,52 +1,84 @@
 .contact {
   background-color: #d2b48c23;
-    padding: 2rem 0;
-    text-align: center;
-  
-    &__title {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      animation: fadeInUp 0.8s ease-out;
-    }
-  
-    &__form {
-      max-width: 500px;
-      margin: 0 auto;
-      animation: fadeInUp 0.8s ease-out 0.2s;
-    }
-  
-    &__input,
-    &__textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 2px solid #e0e0e0;
-      border-radius: 5px;
-      font-size: 1rem;
-      transition: border-color 0.3s;
-  
-      &:focus {
-        border-color: #a777e3;
-        outline: none;
-      }
-    }
-  
-    &__button {
-      background-color: #6e8efb;
-      color: #ffffff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: #a777e3;
-      }
+  padding: 2rem 0;
+  text-align: center;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-button, &__resume-download {
+    font-size: 2rem;
+    background: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: #d2b48c;
+      border-color: #d2b48c;
+      background-color: #2c3e50;
     }
   }
-  
+
+  &__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: showModal 0.3s ease-out;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease-out;
+    cursor: pointer;
+  }
+
+  &__form {
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out 0.2s;
+  }
+
+  &__input,
+  &__textarea {
+    width: 72%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #a777e3;
+      outline: none;
+    }
+  }
+
+  &__button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #d2b48c;
+    }
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -57,3 +89,15 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes showModal {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
