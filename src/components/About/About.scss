@@ -1,70 +1,62 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__section {
+    width: 90vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-  
-    &__section {
-        width: 90vw;
-      height: 100vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10vw;
-      display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-        background: linear-gradient(145deg, #d2b48c23, #f4a56011); 
+    padding: 0 10vw;
+    margin-bottom: 2rem;
+    background: linear-gradient(145deg, #d2b48c23, #f4a56011); 
     border-radius: 50px; 
     padding: 2rem; 
-    margin-bottom: 2rem;
 
-  
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-      }
-  
-      &-title {
-        flex-basis: 40%;
-        font-size: calc(2rem + 1vw);
-        color: #333;
-        font-size: 2.5rem; /* Adjust the header font size */
-        font-weight: bold;
-        flex: 1;
-      }
-  
-      &-content {
-        flex-basis: 50%;
-        font-size: calc(1rem + 0.5vw);
-        color: #666;
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem; /* Adjust the content font size */
-      flex: 2;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &-title {
+      flex-basis: 40%;
+      font-size: calc(2rem + 1vw);
+      color: #333;
+    }
+
+    &-content {
+      flex-basis: 50%;
+      font-size: calc(1rem + 0.5vw);
+      color: #666;
+      display: flex;
+      flex-direction: column;
       padding-left: 2rem;
-      }
     }
-    &__box {
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    &__social-links {
-        display: flex;
-        justify-content: flex-end;
-        gap: 4rem;
-        margin-top: 1rem;
-      }
+  }
+
+  &__box {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    margin-top: 1rem;
+  }
+
+  &__social-link {
+    font-size: 2.5rem; 
+    color: #000; 
     
-      &__social-link {
-        font-size: 2.5rem; 
-        color: #000; 
-        
-        &:hover {
-            &.github { color: #333; } 
-            &.linkedin { color: #0077b5; } 
-            &.medium { color: #00ab6c; }
-        }
+    &:hover {
+      &.github { color: #333; } 
+      &.linkedin { color: #0077b5; } 
+      &.medium { color: #00ab6c; }
+    }
   }
 }
