@@ -6,6 +6,8 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
+import { Canvas } from '@react-three/fiber';
+import SpinningSphere from './components/SpinningCube/SpinningCube';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Canvas>
+        <SpinningSphere />
+      </Canvas>
       <Contact/>
       <Footer/>
     </Router>

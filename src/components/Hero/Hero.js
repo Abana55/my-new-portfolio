@@ -4,18 +4,13 @@ import Skills from "../Skills/Skills";
 import { Link } from "react-router-dom";
 import { Canvas } from '@react-three/fiber';
 import SpinningCube from '../SpinningCube/SpinningCube'; 
-import GeometryNodeFlowerModel from '../GeometryNodeFlowerModel/GeometryNodeFlowerModel';
 import { Environment } from '@react-three/drei';
 
 
 function Hero() {
   return (
     <div className="hero">
-        <Canvas>
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
         <SpinningCube />
-      </Canvas>
       <div className="hero__content">
         <h1 className="hero__title">Welcome to My Portfolio</h1>
         <p className="hero__description">
