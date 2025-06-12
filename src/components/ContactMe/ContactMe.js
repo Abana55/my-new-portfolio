@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactMe.scss';
+import resumeFile from '../../assets/resume/resume.docx';
 
 function Contact() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,9 +11,9 @@ function Contact() {
 
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <button onClick={toggleModal} className="contact__title-button">Contact Me</button>
-      <a href="/path/to/your/resume.pdf" download className="contact__resume-download">Download Resume</a>
+      <a href={resumeFile} download className="contact__resume-download">Download Resume</a>
 
       {isModalOpen && (
         <div className="contact__modal">
